@@ -7,8 +7,6 @@
  * Time: 2:32 PM
  */
 
-namespace StatisticsMaker;
-
 class StatisticsMaker
 {
     public static function metadataStatistics() {
