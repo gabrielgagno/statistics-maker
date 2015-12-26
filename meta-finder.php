@@ -10,3 +10,5 @@
 
 use StatisticsMaker\StatisticsMaker;
 
+echo "TEST 1: META FIND\n";
+StatisticsMaker::metadataStatistics();
