@@ -24,10 +24,10 @@ class StatisticsMaker
             echo $row['baseUrl']."\n";
             echo "EMPTY: ";
             if(!isset($row['aq_md_description']) || empty($row['aq_md_description'])) {
-                echo $row['aq_md_description'];
+                echo "description";
             }
             if(!isset($row['aq_md_searchstring']) || empty($row['aq_md_searchstring'])) {
-                echo ", keywords";
+                echo " keywords";
             }
             echo "\n\n";
         }
