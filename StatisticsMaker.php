@@ -22,6 +22,14 @@ class StatisticsMaker
 
         while ($row = mysqli_fetch_assoc($results)) {
             echo $row['baseUrl']."\n";
+            echo "EMPTY: ";
+            if(!isset($row['aq_md_description'])) {
+                echo "description";
+            }
+            if(!isset($row['aq_md_searchstring'])) {
+                echo ", keywords";
+            }
+            echo "\n\n";
         }
         mysqli_close($conn);
     }
