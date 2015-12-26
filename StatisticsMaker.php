@@ -20,8 +20,9 @@ class StatisticsMaker
 
         $results = $conn->query($query);
 
-        foreach(mysqli_fetch_assoc($results) as $row) {
+        while ($row = mysqli_fetch_assoc($results)) {
             echo $row['baseUrl']."\n";
         }
+        mysqli_close($conn);
     }
 }
