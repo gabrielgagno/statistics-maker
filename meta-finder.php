@@ -6,5 +6,7 @@
  * Time: 2:31 PM
  */
 
+require('StatisticsMaker.php');
+
 echo "TEST 1: META FIND\n";
 StatisticsMaker::metadataStatistics();
