@@ -15,8 +15,8 @@ class StatisticsMaker
             die(mysqli_error($conn));
         }
 
-        $query = "select baseUrl from webpage where aq_md_description is null or aq_md_description like '%%'".
-            "or aq_md_searchstring is null or aq_md_searchstring like '%%'";
+        $query = "select baseUrl from webpage where aq_md_description is null or aq_md_description like ''".
+            "or aq_md_searchstring is null or aq_md_searchstring like ''";
 
         $results = $conn->query($query);
 
